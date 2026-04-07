@@ -39,7 +39,7 @@ definePageMeta({
 
 const goToHome = () => {
     authStore.cleanError();
-    navigateTo('/login');
+    navigateTo('/home');
 };
 useHead({
     title: 'Página no encontrada',

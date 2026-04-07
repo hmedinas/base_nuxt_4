@@ -61,9 +61,9 @@
     },
     {
       "id": 6,
-      "label": "Viajes y Eventos",
+      "label": "401",
       "icon": "plane",
-      "to": "/viajesEventos",
+      "to": "/errors/401",
       "role": [
          "JefeArea",
         "Eventos",
@@ -73,9 +73,45 @@
     },
     {
       "id": 7,
-      "label": "Actuaciones",
+      "label": "402",
       "icon": "triangle-exclamation",
-      "to": "/actuaciones",
+      "to": "/errors/402",
+      "role": [
+        "JefeArea",
+        "Direccion",
+        "DEVELOPER",
+         "Basico"
+      ]
+    },
+    {
+      "id": 8,
+      "label": "403",
+      "icon": "triangle-exclamation",
+      "to": "/errors/403",
+      "role": [
+        "JefeArea",
+        "Direccion",
+        "DEVELOPER",
+         "Basico"
+      ]
+    },
+     {
+      "id": 9,
+      "label": "404",
+      "icon": "triangle-exclamation",
+      "to": "/errors/504",
+      "role": [
+        "JefeArea",
+        "Direccion",
+        "DEVELOPER",
+         "Basico"
+      ]
+    },
+     {
+      "id": 10,
+      "label": "500",
+      "icon": "triangle-exclamation",
+      "to": "/errors/500",
       "role": [
         "JefeArea",
         "Direccion",

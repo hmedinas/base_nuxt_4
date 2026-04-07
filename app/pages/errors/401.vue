@@ -50,7 +50,7 @@ definePageMeta({
 });
 
 const goToHome = () => {
-    navigateTo('/login');
+    navigateTo('/home');
 };
 useHead({
     title: 'Página no encontrada',

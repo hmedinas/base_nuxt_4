@@ -51,7 +51,8 @@ export const UserService = async () => {
     };
     const GetImageUser = async (hash: string): Promise<string> => {
         try {
-            if (config.configuration.useMockUser) return `${envConfig.pathGlobal}nophoto.jpg`;
+            debugger 
+            if (config.configuration.useMockUser) return `${envConfig.pathGlobal}person.jpg`;
             
             const url = `/Profile/${hash}/image?imageSize=2`;
             const response = await $axiosUser.get(url, {

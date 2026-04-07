@@ -36,7 +36,7 @@ definePageMeta({
 })
 
 const goToHome = () => {
-    clearError({ redirect: '/login' })
+    clearError({ redirect: '/auth/login-base' })
 }
 useHead({
   title: 'Página no encontrada'

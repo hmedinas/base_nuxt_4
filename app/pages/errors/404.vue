@@ -34,7 +34,7 @@ definePageMeta({
 });
 
 const goToHome = () => {
-    navigateTo('/');
+    navigateTo('/home');
 };
 useHead({
     title: 'Página no encontrada',
