@@ -28,7 +28,7 @@ const appConfig = config[stage]
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
-  devtools: { enabled: true },
+  devtools: { enabled: stage !== 'production'},
   
   ssr: false, // SPA mode
   
@@ -108,7 +108,11 @@ export default defineNuxtConfig({
   },
   
   vite: {
+    
     clearScreen: false,
+    build: {
+      chunkSizeWarningLimit: 1000, // PrimeVue y FontAwesome son grandes
+    }
   },
 
   runtimeConfig:{
