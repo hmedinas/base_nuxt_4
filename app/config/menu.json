@@ -4,24 +4,36 @@
       "id": 1,
       "label": "Inicio",
       "icon": "house",
-      "to": "/",
+      "to": "/home",
       "role": [
         "DEVELOPER",
-        "SGPyG-Direccion",
-         "SGPyG-JefeArea",
-        "SGPyG-Basico"
+        "Direccion",
+        "JefeArea",
+        "Basico"
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Inicio Animado",
+      "icon": "house",
+      "to": "/home/index-animado",
+      "role": [
+        "DEVELOPER",
+        "Direccion",
+        "JefeArea",
+        "Basico"
       ]
     },
     {
       "id": 11,
-      "label": "Vista Personal",
+      "label": "Dashboard",
       "icon": "address-card",
-      "to": "/vistaPersonal",
+      "to": "/dashboard",
       "role": [
         "DEVELOPER",
-        "SGPyG-Basico",
-          "SGPyG-JefeArea",
-             "SGPyG-Direccion"
+        "Basico",
+        "JefeArea",
+        "Direccion"
       ]
     },
     {
@@ -30,9 +42,9 @@
       "icon": "user",
       "to": "/tecnicos",
       "role": [
-        "SGPyG-Direccion",
-          "SGPyG-GuardiasOperadores",
-         "SGPyG-GuardiasTecnicos",
+        "Direccion",
+        "GuardiasOperadores",
+        "GuardiasTecnicos",
         "DEVELOPER"
       ]
     },
@@ -42,8 +54,8 @@
       "icon": "clock",
       "to": "/guardias",
       "role": [
-         "SGPyG-Direccion",
-         "SGPyG-GuardiasTecnicos",
+         "Direccion",
+         "GuardiasTecnicos",
           "DEVELOPER"
       ]
     },
@@ -53,8 +65,8 @@
       "icon": "shield",
       "to": "/guardiasOperadores",
       "role": [
-          "SGPyG-Direccion",
-          "SGPyG-GuardiasOperadores",
+          "Direccion",
+          "GuardiasOperadores",
           "DEVELOPER"
       ]
     },
@@ -64,9 +76,9 @@
       "icon": "plane",
       "to": "/viajesEventos",
       "role": [
-         "SGPyG-JefeArea",
-        "SGPyG-Eventos",
-           "SGPyG-Direccion",
+         "JefeArea",
+        "Eventos",
+           "Direccion",
         "DEVELOPER"
       ]
     },
@@ -76,10 +88,10 @@
       "icon": "triangle-exclamation",
       "to": "/actuaciones",
       "role": [
-        "SGPyG-JefeArea",
-        "SGPyG-Direccion",
+        "JefeArea",
+        "Direccion",
         "DEVELOPER",
-         "SGPyG-Basico"
+         "Basico"
       ]
     },
     {
@@ -88,8 +100,8 @@
       "icon": "file-lines",
       "to": "/objetivos",
       "role": [       
-         "SGPyG-Direccion",
-          "SGPyG-JefeArea",
+         "Direccion",
+          "JefeArea",
         "DEVELOPER"
       ]
     },
@@ -99,7 +111,7 @@
       "icon": "sack-dollar",
       "to": "/compensaciones",
       "role": [
-       "SGPyG-Direccion",
+       "Direccion",
         "DEVELOPER"
       ]
     },
@@ -109,7 +121,7 @@
       "icon": "chart-simple",
       "to": "/baremos",
       "role": [
-       "SGPyG-Direccion",
+       "Direccion",
         "DEVELOPER"
       ]
     },
@@ -119,8 +131,8 @@
       "icon": "lightbulb",
       "to": "/propuestas",
       "role": [
-       "SGPyG-Direccion",
-       "SGPyG-Gratificaciones",
+       "Direccion",
+       "Gratificaciones",
         "DEVELOPER"
         
       ]
