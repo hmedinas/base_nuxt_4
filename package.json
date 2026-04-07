@@ -14,8 +14,12 @@
     "reset": "npm run clean && npm run dev"
   },
   "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^7.2.0",
+    "@fortawesome/free-regular-svg-icons": "^7.2.0",
+    "@fortawesome/free-solid-svg-icons": "^7.2.0",
     "@pinia/nuxt": "^0.11.3",
     "@primeuix/themes": "^2.0.3",
+    "@vesp/nuxt-fontawesome": "^2.0.0",
     "@vueuse/core": "^14.2.1",
     "axios": "^1.14.0",
     "daisyui": "^5.5.19",

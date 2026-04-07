@@ -31,12 +31,37 @@ export default defineNuxtConfig({
   
   ssr: false, // SPA mode
   
-  modules: ['@pinia/nuxt','@nuxtjs/tailwindcss', '@primevue/nuxt-module'],
+  modules: ['@pinia/nuxt','@nuxtjs/tailwindcss', '@primevue/nuxt-module', '@vesp/nuxt-fontawesome'],
   
   future: {
     compatibilityVersion: 4,
   },
-  
+  fontawesome :{
+    icons: {
+      solid: [
+          'house', 'cog',  'user', 'print', 'calendar', 'calendar-days', 'chart-simple',
+          'sack-dollar', 'plus', 'trash',  'trash-can', 'pen','pen-to-square', 'check',
+          'rotate', 'rotate-right', 'filter', 'magnifying-glass','circle-info','power-off',
+          'moon','sun',  'file-excel','eye',  'x',  'floppy-disk',  'xmark',
+          'ban', 'users', 'car-rear', 'minus', 'question', 'gear',  'share-from-square',
+          'file-pen',   'money-bill',  'spinner', 'angle-left', 'angle-right',  'square',
+          'timeline', 'file', 'file-word', 'file-lines','file-export', 'sack-xmark', 
+          'arrow-right-from-bracket', 'desktop', 'person-walking-arrow-right',
+          'caret-down', 'caret-up', 'user-clock', 'angle-up', 'angle-down', 'clock', 'shield',
+          'plane', 'triangle-exclamation', 'lightbulb', 'chart-simple', 'square-check',
+          'rectangle-xmark', 'user-minus', 'user-xmark', 'arrow-right', 'user-pen', 'user-plus', 
+          'circle', 'delete-left', 'circle-left', 'plane-circle-check', 'square-poll-vertical',
+          'bell', 'envelope', 'calculator', 'address-card', 'share', 'chart-line', 'circle-arrow-right',
+          'circle-arrow-left', 'people-arrows', 'stamp', 'bars-progress', 'umbrella','user-shield',
+          'retweet', 'cloud', 'g', '0', '1', '2', '3', '4', '5', '8', '6', '7', '9', 'spinner', 
+          'circle-check', 'id-badge', 'fa-file-word', 'fa-file-lines', 'fa-holly-berry', 'users', 
+          'clock-rotate-left', 'calendar-check', 'map-location', 'paper-plane', 'tag', 'stopwatch',
+          'award', 'person', 'desktop', 'robot'
+      ],
+      regular: ['comment', 'user', 'trash-can', 'square'],
+      brands: ['twitter'],
+    },
+  },
   primevue: {
     components: {
       include: ['Button', 'DataTable', 'Column', 'DatePicker', 'InputMask'],
