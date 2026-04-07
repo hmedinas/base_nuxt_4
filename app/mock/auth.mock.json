@@ -1,0 +1,67 @@
+{
+ 
+    "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InFoN1M4c1JPbU45UHlZZGJ3bzBpMmcxdnZMcyIsImtpZCI6InFoN1M4c1JPbU45UHlZZGJ3bzBpMmcxdnZMcyJ9.eyJhdWQiOiJtaWNyb3NvZnQ6aWRlbnRpdHlzZXJ2ZXI6dGVsZW9zLnByZXAiLCJpc3MiOiJodHRwOi8vYWRmcy5leHRyYW5ldC5wcmVzaWRlbmNpYS5nb2IuZXMvYWRmcy9zZXJ2aWNlcy90cnVzdCIsImlhdCI6MTczOTM3MjYzOCwibmJmIjoxNzM5MzcyNjM4LCJleHAiOjE3MzkzNzYyMzgsInVuaXF1ZV9uYW1lIjoiR1BHXFxleHRlcm5vaG1lZGluYSIsImFwcHR5cGUiOiJQdWJsaWMiLCJhcHBpZCI6InRlbGVvcy5wcmVwIiwiYXV0aG1ldGhvZCI6Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9hdXRoZW50aWNhdGlvbm1ldGhvZC93aW5kb3dzIiwiYXV0aF90aW1lIjoiMjAyNS0wMi0xMlQxNDoxNzowMC42MDFaIiwidmVyIjoiMS4wIiwiaWRzdWIiOiJGaCtiek5xTmYzY3NQSnpDYURMM0lERnlDNlRxclNXckJBc0JIcldxKzRvPSJ9.Xo86f7qxIGic5_UOfHyJ-QJF-buu7Bn1o9v12rZPdQuukAaS1kUzsQajBuBhGH1l40hjmAy2dhRBlDip7e3BHx3R-a02WBMyS0dynACMWlFtnSeJ19mHtvZG1WSv_b7VNeb1V6VQclf3L2fbBM6Uq5GnHb5U6oRKc9OzDIXdQGduQJY_AjeBToF7lqpbEWTumpBqYD7St-JmpXJYK-TaTSDCzVCgTgGxGiQdpzU_LSFswivG9wUEK9h2CDT9HFZT1tkQp4eKx-tK4aAbEUZe00sQS-YEtRWZizvjeBKjIOPa7q0GaMHPEVj00NEVmiKZW4rWaNgGOo3RjmoPsYDooA",
+    "user": {
+        "title": "Analista",
+        "userName": "externoUser",
+        "displayName": "Smith Flores, Juan",
+        "departmentDesc": "OFICINA DE TECNOLOGIA", 
+        "email": "tucorreo@email.com",
+        "departmentId": 1475,
+        "externo": false,
+        "userHash": "586847D834412A98A15883D6D03A1D03",
+        "isActive": true
+    },
+    "applicationUser":
+    {
+        "idUserApplication": 3465,
+        "idUser": 4461,
+        "idApplication": 22,
+        "lastAccess": "2024-10-17T10:09:44.957",
+        "applicationName": "PORYECTO-BASE",
+        "pageForWebInContruction": false,
+        "exceptionWebConstructorForDevelopers": false,
+        "isDeveloper": true,
+        "isActive": true
+    },
+    "roles":[
+        {
+            "rolName": "JefeArea",
+            "permissionName": "None",
+            "granted": true
+        },
+        {
+            "rolName": "Captura",
+            "permissionName": "None",
+            "granted": true
+        },       
+        {
+            "rolName": "RESPONSABLE",
+            "permissionName": "None",
+            "granted": false
+        },
+        {
+            "rolName": "RESPONSABLE_ADJUNTO",
+            "permissionName": "None",
+            "granted": false
+        },
+        {
+            "rolName": "DEVELOPER",
+            "permissionName": "None",
+            "granted": true
+        }
+    ],
+    "settingApp":
+        {
+        "configScreem": {
+            "isMenuCollapsed" : false,    
+            "isDark" : false,    
+            "isMenuHorizontal" : false,
+            "menuClass" : "bg-application-blue-600",
+            "topbarClass" : "bg-application-silver-100",
+            "fondoClass" : "bg-fondo-100",
+            "primaryColor" : "bg-alternative-purple-300"
+        }
+        
+    }
+}

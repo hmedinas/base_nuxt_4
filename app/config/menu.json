@@ -1,0 +1,129 @@
+{
+    "menu":[
+    {
+      "id": 1,
+      "label": "Inicio",
+      "icon": "house",
+      "to": "/",
+      "role": [
+        "DEVELOPER",
+        "SGPyG-Direccion",
+         "SGPyG-JefeArea",
+        "SGPyG-Basico"
+      ]
+    },
+    {
+      "id": 11,
+      "label": "Vista Personal",
+      "icon": "address-card",
+      "to": "/vistaPersonal",
+      "role": [
+        "DEVELOPER",
+        "SGPyG-Basico",
+          "SGPyG-JefeArea",
+             "SGPyG-Direccion"
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Técnicos",
+      "icon": "user",
+      "to": "/tecnicos",
+      "role": [
+        "SGPyG-Direccion",
+          "SGPyG-GuardiasOperadores",
+         "SGPyG-GuardiasTecnicos",
+        "DEVELOPER"
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Guardias",
+      "icon": "clock",
+      "to": "/guardias",
+      "role": [
+         "SGPyG-Direccion",
+         "SGPyG-GuardiasTecnicos",
+          "DEVELOPER"
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Guardias Operadores",
+      "icon": "shield",
+      "to": "/guardiasOperadores",
+      "role": [
+          "SGPyG-Direccion",
+          "SGPyG-GuardiasOperadores",
+          "DEVELOPER"
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Viajes y Eventos",
+      "icon": "plane",
+      "to": "/viajesEventos",
+      "role": [
+         "SGPyG-JefeArea",
+        "SGPyG-Eventos",
+           "SGPyG-Direccion",
+        "DEVELOPER"
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Actuaciones",
+      "icon": "triangle-exclamation",
+      "to": "/actuaciones",
+      "role": [
+        "SGPyG-JefeArea",
+        "SGPyG-Direccion",
+        "DEVELOPER",
+         "SGPyG-Basico"
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Objetivos",
+      "icon": "file-lines",
+      "to": "/objetivos",
+      "role": [       
+         "SGPyG-Direccion",
+          "SGPyG-JefeArea",
+        "DEVELOPER"
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Compensaciones",
+      "icon": "sack-dollar",
+      "to": "/compensaciones",
+      "role": [
+       "SGPyG-Direccion",
+        "DEVELOPER"
+      ]
+    },
+    {
+      "id": 9,
+      "label": "Baremos",
+      "icon": "chart-simple",
+      "to": "/baremos",
+      "role": [
+       "SGPyG-Direccion",
+        "DEVELOPER"
+      ]
+    },
+    {
+      "id": 10,
+      "label": "Propuestas",
+      "icon": "lightbulb",
+      "to": "/propuestas",
+      "role": [
+       "SGPyG-Direccion",
+       "SGPyG-Gratificaciones",
+        "DEVELOPER"
+        
+      ]
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+    "configuration": {
+        "useMock": true,
+        "useMockUser": true,
+        "version": "1.1.0",
+        "settingColor": true,       
+        "nameApplication": "ProyectBase",
+        "isMantenimiento": false,
+        "toolsView": true,
+        "viewLogin": false
+    },
+    "devServer": {
+        "port": 3000
+     },
+    "staging": {
+        
+        "urlService": "https://desapi.tuserver.com/ProyectBase/api",
+        "usuarios":{
+            "url": "https://desapi.tuserver.com/segurity/api/v1",
+            "appName": "ProyectBase"
+        },
+        "isActiveConsole": true,
+        "urlCRM": "https://dyn365.tuserver.com/CRM/main.aspx",
+        "pathGlobal": "/",
+        "autentification": {
+            "authority": "https://adfs.tuserver.com/adfs",
+            "clientId": "aplicaciones",
+            "responseType": "code",
+            "scope": "openid profile appDeseada",
+            "filterProtocolClaims": true,
+            "loadUserInfo": false,
+            "automaticSilentRenew": true,
+            "silentRequestTimeout": 1500,
+            "accessTokenExpiringNotificationTime": 300,
+            "callback": "callback",
+            "callbackSilent": "silent-callback",
+            "postLogout": "/"
+        },
+        "DEBUG": true
+    },
+    "development": {
+          
+        "urlService": "https://desapi.tuserver.com/ProyectBase/api",
+        "usuarios":{
+            "url": "https://desapi.tuserver.com/segurity/api/v1",
+            "appName": "ProyectBase"
+        },
+        "isActiveConsole": true,
+        "urlCRM": "https://dyn365.tuserver.com/CRM/main.aspx",
+        "pathGlobal": "/",
+        "autentification": {
+            "authority": "https://adfs.tuserver.com/adfs",
+            "clientId": "aplicaciones",
+            "responseType": "code",
+            "scope": "openid profile appDeseada",
+            "filterProtocolClaims": true,
+            "loadUserInfo": false,
+            "automaticSilentRenew": true,
+            "silentRequestTimeout": 1500,
+            "accessTokenExpiringNotificationTime": 300,
+            "callback": "callback",
+            "callbackSilent": "silent-callback",
+            "postLogout": "/TuProyecto"
+        },
+        "DEBUG": true
+    }, 
+    "preproduction": {
+           
+        "urlService": "https://desapi.tuserver.com/ProyectBase/api",
+        "usuarios":{
+            "url": "https://desapi.tuserver.com/segurity/api/v1",
+            "appName": "ProyectBase"
+        },
+        "isActiveConsole": true,
+        "urlCRM": "https://dyn365.tuserver.com/CRM/main.aspx",
+        "pathGlobal": "/",
+        "autentification": {
+            "authority": "https://adfs.tuserver.com/adfs",
+            "clientId": "aplicaciones",
+            "responseType": "code",
+            "scope": "openid profile appDeseada",
+            "filterProtocolClaims": true,
+            "loadUserInfo": false,
+            "automaticSilentRenew": true,
+            "silentRequestTimeout": 1500,
+            "accessTokenExpiringNotificationTime": 300,
+            "callback": "callback",
+            "callbackSilent": "silent-callback",
+            "postLogout": "/TuProyecto"
+        },
+        "DEBUG": true
+    },
+    "production": {
+           
+        "urlService": "https://desapi.tuserver.com/ProyectBase/api",
+        "usuarios":{
+            "url": "https://desapi.tuserver.com/segurity/api/v1",
+            "appName": "ProyectBase"
+        },
+        "isActiveConsole": true,
+        "urlCRM": "https://dyn365.tuserver.com/CRM/main.aspx",
+        "pathGlobal": "/",
+        "autentification": {
+            "authority": "https://adfs.tuserver.com/adfs",
+            "clientId": "aplicaciones",
+            "responseType": "code",
+            "scope": "openid profile appDeseada",
+            "filterProtocolClaims": true,
+            "loadUserInfo": false,
+            "automaticSilentRenew": true,
+            "silentRequestTimeout": 1500,
+            "accessTokenExpiringNotificationTime": 300,
+            "callback": "callback",
+            "callbackSilent": "silent-callback",
+            "postLogout": "/TuProyecto"
+        },
+        "DEBUG": true
+    }  
+}
