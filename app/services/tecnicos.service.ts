@@ -31,6 +31,10 @@ export const TecnicoService = async () => {
     //Obtener técnico por ID
     const GetTecnicoById = async (idTecnico: number): Promise<ResponseApi<Tecnico>> => {
         try {
+               if (config.configuration.useMock)                
+                return  await __getTecnicoById()
+                
+
             const url = `${EndPoint.Tecnicos.TecnicoById}${idTecnico}`;
             const response = await $axiosApp.get(url);
             return response.data;
@@ -66,7 +70,16 @@ export const TecnicoService = async () => {
     // metodo para listar tecnicos con mock
     const __getListTecnicos = async (filter: ListadoTecnicosFilter): Promise<ResponseApi<ListadoTecnicos[]>> => {
         try {
-            const mockService = await import('@/mock/listadoTecnicos.mock.json');
+            const mockService = await import('@/mock/getAllTecnicos.mock.json');
+            return mockService;
+        } catch (error) {
+            logger.error('Error in ConstructoresMock: ', error);
+            throw error;
+        }
+    };
+    const __getTecnicoById = async (): Promise<ResponseApi<ListadoTecnicos>> => {
+        try {
+            const mockService = await import('@/mock/getIdTecnico.mock.json');
             return mockService;
         } catch (error) {
             logger.error('Error in ConstructoresMock: ', error);

@@ -1,0 +1,24 @@
+{
+  "idResponse": 200,
+  "message": "OK",
+  "totalRows": 1,
+  "data": 
+    {
+      "idInterno": 1,
+      "idUser": 2,
+      "apodo": "PRUEBA",
+      "nivel": 12,
+      "fechaNombramiento": "01/01/2020",
+      "fechaCese": "",
+      "compensacionNivel": true,
+      "esTecnico": true,
+      "miembroDireccion": true,
+      "vdTecnicos": 10,
+      "vd247": 10,
+      "vdDireccion": 30,
+      "estado": "A",
+      "nombreCompleto": "VA97DE97C-32B9-4EF3-8o",
+      "haceGuardias24x7": true,
+      "haceGuardiasOperadores": true
+    }
+}

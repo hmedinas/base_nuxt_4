@@ -3,6 +3,7 @@
 import { readFileSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import Aura from '@primeuix/themes/aura'
 
 // 1. Obtiene la ruta del archivo actual (URL -> Path)
 const __filename = fileURLToPath(import.meta.url)
@@ -64,10 +65,31 @@ export default defineNuxtConfig({
   },
   primevue: {
     components: {
-      include: ['Button', 'DataTable', 'Column', 'DatePicker', 'InputMask'],
+      include: [
+        'Button',
+        'DataTable',
+        'Column',
+        'DatePicker',
+        'InputMask',
+        'InputText',
+        'InputNumber',
+        'InputGroup',
+        'InputGroupAddon',
+        'Select',
+        'Paginator',
+        'Toast',
+        'ConfirmDialog',
+        'ProgressSpinner',
+      ],
     },
-    options: { 
-      theme: 'none'
+    options: {
+      theme: {
+        preset: Aura,
+        options: {
+          darkModeSelector: '.dark',
+          cssLayer: false,
+        }
+      }
     },
   },
   
