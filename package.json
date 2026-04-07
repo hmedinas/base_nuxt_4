@@ -4,14 +4,25 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "clean": "rm -rf .nuxt node_modules/.vite node_modules/.cache .output dist",
-    "clean:all": "rm -rf .nuxt node_modules/.vite node_modules/.cache .output dist node_modules package-lock.json",
-    "reinstall": "npm run clean:all && npm install",
-    "reset": "npm run clean && npm run dev"
+    "dev": "nuxt dev",
+    "stg": "cross-env NUXT_ENV_STAGE=staging&&nuxt dev",
+    "start": "cross-env NUXT_ENV_STAGE=production&&nuxt start",
+    "pre": "cross-env NUXT_ENV_STAGE=preproduction&&nuxt dev",
+    "generate:dev": "cross-env NUXT_ENV_STAGE=development&&npm version patch --no-git-tag-version&&nuxt generate --devtools",
+    "generate:dev--no-version": "cross-env NUXT_ENV_STAGE=development&&nuxt generate --devtools",
+    "build:dev": "cross-env NUXT_ENV_STAGE=development&&npm version patch --no-git-tag-version&&nuxt build --devtools",
+    "build:dev--no-version": "cross-env NUXT_ENV_STAGE=development&&nuxt build --devtools",
+    "generate:pre": "cross-env NUXT_ENV_STAGE=preproduction&&npm version patch --no-git-tag-version&&nuxt generate --devtools",
+    "generate:pre--no-version": "cross-env NUXT_ENV_STAGE=preproduction&&nuxt generate --devtools",
+    "build:pre": "cross-env NUXT_ENV_STAGE=preproduction&&npm version patch --no-git-tag-version&&nuxt build --devtools",
+    "build:pre--no-version": "cross-env NUXT_ENV_STAGE=preproduction&&nuxt build --devtools",
+    "generate:pro": "cross-env NUXT_ENV_STAGE=production&&npm version patch --no-git-tag-version&&nuxt generate",
+    "generate:pro--no-version": "cross-env NUXT_ENV_STAGE=production&&nuxt generate",
+    "build:pro": "cross-env NUXT_ENV_STAGE=production&&npm version patch --no-git-tag-version&&nuxt build",
+    "build:pro--no-version": "cross-env NUXT_ENV_STAGE=production&&nuxt build"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^7.2.0",
@@ -39,6 +50,7 @@
     "@primevue/nuxt-module": "^4.5.4",
     "@types/node": "^25.5.2",
     "autoprefixer": "^10.4.27",
+    "cross-env": "^10.1.0",
     "postcss": "^8.5.8",
     "tailwindcss": "^3.4.19",
     "tailwindcss-primeui": "^0.6.1"
