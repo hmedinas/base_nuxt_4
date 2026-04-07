@@ -36,7 +36,8 @@
                 <div class="input-group">
                     <span class="input-group-text width-filter">Comp. nivel</span>
                     <div class="flex items-center">
-                        <input type="checkbox" v-model="compensacionNivel" class="controlCheck toggle toggle-success m-2" :disabled="true" />
+                        <input type="checkbox" v-model="compensacionNivel"
+                        class="super-custom-toggle" :disabled="true"  />
                         <div class="ml-0 w-4 mr-2">
                             <span>{{ compensacionNivel ? 'Sí' : 'No' }}</span>
                         </div>
@@ -74,7 +75,7 @@
                 <div class="input-group">
                     <span class="input-group-text width-filter">Es técnico</span>
                     <div class="flex items-center">
-                        <input type="checkbox" v-model="esTecnico" class="controlCheck toggle toggle-success m-2" :disabled="!props.isEdit" />
+                        <input type="checkbox" v-model="esTecnico" class="controlCheck super-custom-toggle m-2" :disabled="!props.isEdit" />
                         <div class="ml-0 w-4 mr-2">
                             <span>{{ esTecnico ? 'Sí' : 'No' }}</span>
                         </div>
@@ -83,7 +84,7 @@
                 <div class="input-group">
                     <span class="input-group-text width-filter">Jefe de área</span>
                     <div class="flex items-center">
-                        <input type="checkbox" v-model="esJefeArea" class="controlCheck toggle toggle-success m-2" :disabled="!props.isEdit" />
+                        <input type="checkbox" v-model="esJefeArea" class="controlCheck super-custom-toggle m-2" :disabled="!props.isEdit" />
                         <div class="ml-0 w-4 mr-2">
                             <span>{{ esJefeArea ? 'Sí' : 'No' }}</span>
                         </div>
@@ -92,7 +93,7 @@
                  <div class="input-group">
                     <span class="input-group-text width-filter">Comité dirección</span>
                     <div class="flex items-center">
-                        <input type="checkbox" v-model="comiteDireccion" class="controlCheck toggle toggle-success m-2" :disabled="!props.isEdit" />
+                        <input type="checkbox" v-model="comiteDireccion" class="controlCheck super-custom-toggle m-2" :disabled="!props.isEdit" />
                         <div class="ml-0 w-4 mr-2">
                             <span>{{ comiteDireccion ? 'Sí' : 'No' }}</span>
                         </div>
@@ -101,7 +102,7 @@
                 <div class="input-group">
                     <span class="input-group-text width-filter">Miembro dirección</span>
                     <div class="flex items-center">
-                        <input type="checkbox" v-model="miembroDireccion" class="controlCheck toggle toggle-success m-2" :disabled="!props.isEdit" />
+                        <input type="checkbox" v-model="miembroDireccion" class="controlCheck super-custom-toggle m-2" :disabled="!props.isEdit" />
                         <div class="ml-0 w-4 mr-2">
                             <span>{{ miembroDireccion ? 'Sí' : 'No' }}</span>
                         </div>
@@ -116,7 +117,7 @@
                 <div class="input-group">
                     <span class="input-group-text width-filter">Guardias</span>
                     <div class="flex items-center">
-                        <input type="checkbox" v-model="haceGuardias24x7" class="controlCheck toggle toggle-success m-2" :disabled="!props.isEdit" />
+                        <input type="checkbox" v-model="haceGuardias24x7" class="controlCheck super-custom-toggle m-2" :disabled="!props.isEdit" />
                         <div class="ml-0 w-4 mr-2">
                             <span>{{ haceGuardias24x7 ? 'Sí' : 'No' }}</span>
                         </div>
@@ -126,7 +127,7 @@
                 <div class="input-group">
                     <span class="input-group-text width-filter">Viajes</span>
                     <div class="flex items-center">
-                        <input type="checkbox" v-model="haceViajes" class="controlCheck toggle toggle-success m-2" :disabled="!props.isEdit" />
+                        <input type="checkbox" v-model="haceViajes" class="controlCheck super-custom-toggle m-2" :disabled="!props.isEdit" />
                         <div class="ml-0 w-4 mr-2">
                             <span>{{ haceViajes ? 'Sí' : 'No' }}</span>
                         </div>
@@ -138,7 +139,7 @@
                         <input
                             type="checkbox"
                             v-model="haceGuardiasOperadores"
-                            class="controlCheck toggle toggle-success m-2"
+                            class="controlCheck super-custom-toggle m-2"
                             :disabled="!props.isEdit"
                         />
                         <div class="ml-0 w-4 mr-2">
@@ -501,19 +502,3 @@ const LimpiarDatos = () => {
     advertencia.value = false;
 };
 </script>
-
-<style scoped>
-::v-deep(.p-inputnumber input) {
-    border-top-left-radius: 0 !important;
-    border-top-right-radius: 0.25rem !important;
-    border-bottom-right-radius: 3.25px !important;
-    border-bottom-left-radius: 0rem !important;
-    text-align: right !important;
-}
-.p-select-label {
-    overflow: hidden !important;
-}
-.p-select.p-disabled {
-    overflow: hidden !important;
-}
-</style>

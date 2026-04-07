@@ -146,3 +146,64 @@ body {
 .p-confirmdialog .p-dialog-content {
     align-items: flex-start !important;
 }
+
+/*===========================================================*/
+/*PARA EL CHECK BOX PORQUE DAYSI UI NO PILLA EL COLOR BIEN */
+/*===========================================================*/
+.super-custom-toggle {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  position: relative;
+  
+  /* GEOMETRÍA */
+  width: 3.4rem;        /* Un pelín más de ancho para que respire */
+  height: 1.7rem;       
+  border-radius: 999px;
+  
+  /* CENTRADO FLEXBOX */
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  
+  /* EL AIRE LATERAL (Aquí está el truco) */
+  padding: 0 0.3rem !important; /* Aumentamos el margen interno */
+
+  /* COLORES OFF */
+  border: 2px solid #d1d5db;
+  background-color: #f3f4f6;
+}
+
+/* LA BOLITA */
+.super-custom-toggle::before {
+  content: "";
+  display: block;
+  width: 1.15rem;        /* Tamaño equilibrado */
+  height: 1.15rem;
+  border-radius: 50%;
+  background-color: #9ca3af;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.25s ease;
+}
+
+/* ESTADO ACTIVADO (SÍ) */
+.super-custom-toggle:checked:not(:disabled) {
+  background-color: #ffffff !important;
+  border-color: var(--p-primary-500) !important;
+}
+
+.super-custom-toggle:checked::before {
+  background-color: var(--p-primary-500) !important;
+  
+  /* AJUSTE DE RECORRIDO HORIZONTAL */
+  /* Lo bajamos un poco para que no choque con el borde derecho */
+  transform: translateX(1.45rem); 
+}
+
+/* ESTADO BLOQUEADO (Disabled) */
+.super-custom-toggle:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

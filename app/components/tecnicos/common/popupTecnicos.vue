@@ -28,14 +28,7 @@
                     :acceso="props.acceso"
                 />
             </div>
-            <div class="p-2">
-                <TecnicoHistorico
-                    v-if="typePopup === TecnicosTypeSreen.Historico"
-                    :open="open"
-                    :idTecnico="props.idTecnico"
-                    @closeReload="emit('closeReload')"
-                />
-            </div>
+           
             <div class="bg-gray-50 px-4 py-3 flex sm:flex sm:flex-row-reverse sm:px-6 dark:bg-dark-panel dark:text-dark-text">
                 <button v-if="props.isEdit" type="button" :class="[color.buttonClassPrimary, 'button']" @click="guardar">
                     <font-awesome icon="floppy-disk" class="w-4 h-4" />
@@ -53,7 +46,6 @@
 
 <script setup lang="ts">
 import TecnicoDatos from '../components/tecnicoDatos.vue';
-import TecnicoHistorico from '../components/tecnicoHistorico.vue';
 import { TecnicosTypeSreen } from '../interfaces';
 
 /* ======================================================================== 

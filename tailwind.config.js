@@ -1,11 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./components/**/*.{js,vue,ts}",
+    "./app/**/*.{vue,js,ts,jsx,tsx}", // <--- ESTO ES VITAL EN NUXT 4
+    "./components/**/*.{vue,js,ts,jsx,tsx}",
     "./layouts/**/*.vue",
     "./pages/**/*.vue",
     "./plugins/**/*.{js,ts}",
-    "./app/**/*.{js,vue,ts}",
+    "./nuxt.config.{js,ts}",
+    "./app.vue",
+    "./error.vue",
     "./node_modules/primevue/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
@@ -110,8 +113,10 @@ export default {
     require('tailwindcss-primeui'),
     require('daisyui')
   ],
-  daisyui: {
-    themes: ["light", "dark"],
+  darkMode: 'class',
+  themes: ['light','dark'],
+    darkTheme: "dark",
+    base: true,
+    utils: true,
     logs: false,
-  },
 }
