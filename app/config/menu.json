@@ -48,15 +48,16 @@
         "DEVELOPER"
       ]
     },
+    
     {
       "id": 5,
-      "label": "Guardias",
-      "icon": "clock",
-      "to": "/guardias",
+      "label": "Viajes",
+      "icon": "plane",
+      "to": "/viajes",
       "role": [
-         "Direccion",
-         "GuardiasTecnicos",
-          "DEVELOPER"
+        "Direccion",
+        "GuardiasTecnicos",
+        "DEVELOPER"
       ]
     },
     {

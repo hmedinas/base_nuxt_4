@@ -1,6 +1,19 @@
 export namespace EndPoint {
 
-    
+    export enum Viajes {
+        // Listado de viajes
+        ListarViajesGrid = '/viajes',
+
+        // Crear/actualizar viaje
+        SaveViaje = '/viajes',
+
+        // Obtener viaje por ID
+        ViajeById = '/viajes/',
+
+        // Borrar viaje
+        DeleteViaje = '/viajes/',
+    }
+
     export enum Tecnicos {
         // listado de tecnicos
         ListarTecnicosGrid = '/tecnicos',

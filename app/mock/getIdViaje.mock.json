@@ -1,0 +1,16 @@
+{
+  "idResponse": 200,
+  "message": "OK",
+  "totalRows": 1,
+  "data": {
+    "idViaje": 182,
+    "idUser": 14,
+    "nombreCompleto": "A94037DCF-B464-476Dl",
+    "fechaInicio": "04/11/2024",
+    "fechaFin": "06/11/2024",
+    "idEstado": 1,
+    "estado": "Inicial",
+    "observaciones": "",
+    "destino": "Hungría"
+  }
+}

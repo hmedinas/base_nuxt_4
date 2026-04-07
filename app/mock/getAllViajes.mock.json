@@ -1,0 +1,95 @@
+{
+  "idResponse": 200,
+  "message": "OK",
+  "totalRows": 8,
+  "data": [
+    {
+      "idViaje": 182,
+      "idUser": 14,
+      "nombreCompleto": "A94037DCF-B464-476Dl",
+      "fechaInicio": "04/11/2024",
+      "fechaFin": "06/11/2024",
+      "idEstado": 1,
+      "estado": "Inicial",
+      "observaciones": "",
+      "destino": "Hungría"
+    },
+    {
+      "idViaje": 183,
+      "idUser": 2,
+      "nombreCompleto": "VA97DE97C-32B9-4EF3-8o",
+      "fechaInicio": "10/11/2024",
+      "fechaFin": "12/11/2024",
+      "idEstado": 2,
+      "estado": "Aprobado",
+      "observaciones": "Visita cliente principal",
+      "destino": "Alemania"
+    },
+    {
+      "idViaje": 184,
+      "idUser": 3,
+      "nombreCompleto": "S110DC615-D855-4F8D-862o",
+      "fechaInicio": "15/11/2024",
+      "fechaFin": "18/11/2024",
+      "idEstado": 3,
+      "estado": "Realizado",
+      "observaciones": "Formación técnica",
+      "destino": "Francia"
+    },
+    {
+      "idViaje": 185,
+      "idUser": 5,
+      "nombreCompleto": "A13EBFE8B-CD40-402u",
+      "fechaInicio": "01/12/2024",
+      "fechaFin": "03/12/2024",
+      "idEstado": 1,
+      "estado": "Inicial",
+      "observaciones": "Reunión de proyecto",
+      "destino": "Italia"
+    },
+    {
+      "idViaje": 186,
+      "idUser": 7,
+      "nombreCompleto": "E4F01F161-5550-4A5C-83n",
+      "fechaInicio": "05/12/2024",
+      "fechaFin": "07/12/2024",
+      "idEstado": 4,
+      "estado": "Cancelado",
+      "observaciones": "Cancelado por el cliente",
+      "destino": "Portugal"
+    },
+    {
+      "idViaje": 187,
+      "idUser": 15,
+      "nombreCompleto": "F609B17D6-5EEC-4083-A89C-Eo",
+      "fechaInicio": "10/12/2024",
+      "fechaFin": "14/12/2024",
+      "idEstado": 2,
+      "estado": "Aprobado",
+      "observaciones": "",
+      "destino": "Polonia"
+    },
+    {
+      "idViaje": 188,
+      "idUser": 16,
+      "nombreCompleto": "H0B217A1B-E2AC-4D1A-B91D-a",
+      "fechaInicio": "16/12/2024",
+      "fechaFin": "17/12/2024",
+      "idEstado": 3,
+      "estado": "Realizado",
+      "observaciones": "Auditoría interna",
+      "destino": "Bélgica"
+    },
+    {
+      "idViaje": 189,
+      "idUser": 17,
+      "nombreCompleto": "C516D736F-5958-4E47-A2a",
+      "fechaInicio": "20/12/2024",
+      "fechaFin": "22/12/2024",
+      "idEstado": 1,
+      "estado": "Inicial",
+      "observaciones": "Soporte técnico",
+      "destino": "Países Bajos"
+    }
+  ]
+}
