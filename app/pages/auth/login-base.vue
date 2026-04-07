@@ -95,12 +95,12 @@ const login = async () => {
     if (config.configuration.useMock)
       {            
           if (authStore.isAuthenticated === true){
-              router.push('/')
+              router.push('/home')
           }
           else
           {
               authStore.login(mock.accessToken);     
-              router.push('/')
+              router.push('/home')
           }
       }
       else
@@ -112,7 +112,7 @@ const login = async () => {
           authStore.login('token_generado_exitosamente');
           
           // Redirigimos al Home
-          router.push('/')
+          router.push('/home')
           
         } else {
           errorMessage.value = "Usuario o contraseña no válidos.";

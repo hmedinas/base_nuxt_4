@@ -47,12 +47,12 @@ const login = async () => {
         if (config.configuration.useMock)
         {            
             if (authStore.isAuthenticated === true){
-                router.push('/')
+                router.push('/home')
             }
             else
             {
                 authStore.login(mock.accessToken);     
-                router.push('/')
+                router.push('/home')
             }
         }
         else
@@ -75,10 +75,10 @@ const checkAuthentication = async () => {
     if (config.configuration.useMock) {
       // Simulación de autenticación en modo mock
       if (authStore.isAuthenticated) {
-        router.push('/');
+        router.push('/home');
       } else {
         authStore.login(mock.accessToken);
-        router.push('/');
+        router.push('/hone');
       }
     } else {
       // Si el usuario no está autenticado, se redirige al login federado

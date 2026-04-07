@@ -9,6 +9,11 @@ export default defineNuxtRouteMiddleware(async (to, from) => {
   
     const authStore = useAuthStore();
 
+    if (to.path === '/') {
+    return navigateTo('/auth/login-base')
+  }
+
+
     // Rutas públicas a las que se puede acceder sin autenticación
     const publicRoutes = ['/login','/callback','/error','/error/403','/error/404','/error/500','/error/401', '/error/logout','/auth/login-base']; 
     debugger
