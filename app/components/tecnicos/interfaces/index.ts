@@ -1,0 +1,6 @@
+export * from './screenTecnicos.enum'
+export * from './listadoTecnicos.interface'
+export * from './listadoTecnicosFilter.interface'
+export * from './saveTecnico.interface'
+export * from './historico.interface'
+export * from './tecnico.interface'

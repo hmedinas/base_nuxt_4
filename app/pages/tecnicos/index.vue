@@ -1,18 +1,18 @@
 <template>
 <div class="dark:text-dark-textSecondary">
     <BreadCrumbs/>
-    <dashboard />
+    <Tecnicos :acceso="acceso" :responsable="responsable"/>
 </div>
 </template>
 <script setup lang="ts">
 import BreadCrumbs from '~/components/common/BreadCrumbs.vue';
-import dashboard from '@/components/dashboard/views/index.vue';
+import Tecnicos from '@/components/tecnicos/views/index.vue';
 import menu from '~/config/menu.json';
 /* ======================================================================== 
                             1.- PROPIEDADES
 ===========================================================================*/
 const route = useRoute();
-/*
+
 const rolesPermitidos = computed(() => {
     return menu.menu.find((item) => item.to === route.path)?.role ?? [];
 });
@@ -21,5 +21,5 @@ const accesoYResponsable = computed(() => useAccesoPantalla(rolesPermitidos.valu
 
 const acceso = computed(() => accesoYResponsable.value.acceso);
 const responsable = computed(() => accesoYResponsable.value.responsable);
-*/
+
 </script>

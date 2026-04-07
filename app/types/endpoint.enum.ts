@@ -1,4 +1,26 @@
 export namespace EndPoint {
+
+    
+    export enum Tecnicos {
+        // listado de tecnicos
+        ListarTecnicosGrid = '/tecnicos',
+
+        // Crear técnico
+        SaveTecnico = '/tecnicos',
+
+        //Obtener técnicos por ID
+        TecnicoById = '/tecnicos/',
+
+        //Borrar técnico
+        DeleteTecnico = '/tecnicos/',
+
+        //Histórico de logs por técnico.
+        HistoricoById = '/historico/',
+
+        //Histórico de logs por fecha
+        HistoricoByFecha = '/historico/historico-by-fecha',
+    }
+    
     // estados generales de la aplicación
     export enum Estados {
         //Obtiene los filtros de cada módulo
