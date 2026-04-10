@@ -216,7 +216,7 @@
 </template>
 
 <script lang="ts" setup>
-import Loading from '~/components/common/loading.vue';
+import Loading from '~/components/common/Loading.vue';
 import PopupViajes from '../common/popupViajes.vue';
 import type { ResponseApi } from '~/types/responseApi.interface';
 import { ViajeService } from '~/services/viajes.service';
