@@ -237,7 +237,7 @@
     </div>
 </template>
 <script setup lang="ts">
-import Box from '~/components/common/box.vue';
+import Box from '~/components/common/Box.vue';
 import { TecnicoService } from '~/services/tecnicos.service';
 import { TypeResponse } from '~/types/responseApi.interface';
 import type { SaveTecnico, Tecnico } from '../interfaces';

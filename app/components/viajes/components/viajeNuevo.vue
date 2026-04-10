@@ -90,7 +90,7 @@
 </template>
 
 <script setup lang="ts">
-import Box from '~/components/common/box.vue';
+import Box from '~/components/common/Box.vue';
 import { ViajeService } from '~/services/viajes.service';
 import type { SaveViaje } from '../interfaces';
 import { TypeTransaction, type Transaction } from '~/types/transaction.interface';

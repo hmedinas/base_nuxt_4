@@ -96,7 +96,7 @@
 </template>
 
 <script setup lang="ts">
-import Box from '~/components/common/box.vue';
+import Box from '~/components/common/Box.vue';
 import { ViajeService } from '~/services/viajes.service';
 import { TypeResponse } from '~/types/responseApi.interface';
 import type { SaveViaje, Viaje } from '../interfaces';
