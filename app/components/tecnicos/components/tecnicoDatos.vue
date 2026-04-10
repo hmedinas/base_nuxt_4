@@ -242,7 +242,7 @@ import { TecnicoService } from '~/services/tecnicos.service';
 import { TypeResponse } from '~/types/responseApi.interface';
 import type { SaveTecnico, Tecnico } from '../interfaces';
 import { TypeTransaction, type Transaction } from '~/types/transaction.interface';
-import Loading from '~/components/common/loading.vue';
+import Loading from '~/components/common/Loading.vue';
 
 /* ======================================================================== 
                             1.- PROPIEDADES

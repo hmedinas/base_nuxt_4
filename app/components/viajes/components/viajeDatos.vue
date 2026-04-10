@@ -101,7 +101,7 @@ import { ViajeService } from '~/services/viajes.service';
 import { TypeResponse } from '~/types/responseApi.interface';
 import type { SaveViaje, Viaje } from '../interfaces';
 import { TypeTransaction, type Transaction } from '~/types/transaction.interface';
-import Loading from '~/components/common/loading.vue';
+import Loading from '~/components/common/Loading.vue';
 
 /* ========================================================================
                             1.- PROPIEDADES

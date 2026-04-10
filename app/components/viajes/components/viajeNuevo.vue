@@ -94,7 +94,7 @@ import Box from '~/components/common/box.vue';
 import { ViajeService } from '~/services/viajes.service';
 import type { SaveViaje } from '../interfaces';
 import { TypeTransaction, type Transaction } from '~/types/transaction.interface';
-import Loading from '~/components/common/loading.vue';
+import Loading from '~/components/common/Loading.vue';
 
 /* ========================================================================
                             1.- PROPIEDADES

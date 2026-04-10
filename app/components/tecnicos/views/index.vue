@@ -405,7 +405,7 @@
     <Toast position="top-center" group="tc" />
 </template>
 <script lang="ts" setup>
-import Loading from '~/components/common/loading.vue';
+import Loading from '~/components/common/Loading.vue';
 import type { Valores } from '~/types/valores.interface';
 import PopupTecnicos from '../common/popupTecnicos.vue';
 import type { ResponseApi } from '~/types/responseApi.interface';
