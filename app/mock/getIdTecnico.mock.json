@@ -6,9 +6,9 @@
     {
       "idInterno": 1,
       "idUser": 2,
-      "apodo": "PRUEBA",
+      "apodo": "CARMEN",
       "nivel": 12,
-      "fechaNombramiento": "01/01/2020",
+      "fechaNombramiento": "15/03/2021",
       "fechaCese": "",
       "compensacionNivel": true,
       "esTecnico": true,
@@ -17,7 +17,7 @@
       "vd247": 10,
       "vdDireccion": 30,
       "estado": "A",
-      "nombreCompleto": "VA97DE97C-32B9-4EF3-8o",
+      "nombreCompleto": "López Fernández, Carmen",
       "haceGuardias24x7": true,
       "haceGuardiasOperadores": true
     }

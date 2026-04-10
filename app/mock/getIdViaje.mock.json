@@ -3,14 +3,14 @@
   "message": "OK",
   "totalRows": 1,
   "data": {
-    "idViaje": 182,
+    "idViaje": 301,
     "idUser": 14,
-    "nombreCompleto": "A94037DCF-B464-476Dl",
-    "fechaInicio": "04/11/2024",
-    "fechaFin": "06/11/2024",
+    "nombreCompleto": "Martínez García, Alejandro",
+    "fechaInicio": "03/02/2025",
+    "fechaFin": "05/02/2025",
     "idEstado": 1,
     "estado": "Inicial",
-    "observaciones": "",
+    "observaciones": "Desplazamiento para revisión de infraestructura en sede central de Budapest.",
     "destino": "Hungría"
   }
 }
